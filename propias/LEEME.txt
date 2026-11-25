@@ -1,0 +1,22 @@
+Fotos propias de fresas
+
+Son dos lotes de fresas distintos. Uno se usa solo para la prueba final y el otro solo para entrenar, así la misma fresa nunca queda en los dos lados.
+
+roboflow_prueba/
+  Fotos con varias fresas del primer lote, que son las que se marcan en Roboflow con el contorno de cada fresa y la etiqueta sana o danada.
+  Están repartidas en una carpeta por persona con una cantidad parecida de fresas (unas 80 a 90 cada uno).
+  No se usan para entrenar ni para escoger el umbral, solo para medir al final.
+  anotaciones_prueba.json tiene los contornos en formato COCO (máscaras RLE) con 286 fresas, 263 sanas y 23 dañadas.
+  Sale del zip exportado de Roboflow quitando 26 contornos repetidos, que eran la misma fresa marcada dos veces
+  o contornos que juntaban dos fresas. El zip original se deja tal cual.
+
+entrenamiento/
+  Fotos del segundo lote separadas por escena, donde una escena es el mismo grupo de fresas sobre el mismo fondo.
+  No hay que marcarlas a mano, se pasan por Grounding DINO + SAM para recortar cada fresa.
+  Se dividen en entrenamiento y validación por escena y no por foto.
+
+no_usar/
+  Fotos de una sola fresa del lote de prueba. No entran al entrenamiento porque son las mismas fresas que se marcan para la prueba.
+
+origen_de_cada_foto.csv
+  Nombre nuevo de cada foto y el nombre que tenía cuando la subieron.

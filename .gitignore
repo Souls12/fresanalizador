@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+~$*
+
+# datasets públicos y zips pesados, se bajan de Mendeley (ver la ficha de datos)
+datos/externos/
+datos/*.zip
+imagenes/propias/*.zip
