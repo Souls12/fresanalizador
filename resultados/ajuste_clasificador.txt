@@ -1,0 +1,19 @@
+cuaderno armado
+etiqueta                     danada  sana
+parte         fuente                     
+entrenamiento jahangirnagar     150   150
+              maduracion         63    56
+              propias            15   242
+              umng              150   150
+validacion    maduracion         19    13
+              propias            10    49
+Listo en cpu
+Antes de ajustar, F1 de dañadas en validación: 0.462
+época 1: F1 de dañadas en validación 0.622 (219 s)
+época 2: F1 de dañadas en validación 0.755 (207 s)
+época 3: F1 de dañadas en validación 0.769 (209 s)
+época 4: F1 de dañadas en validación 0.755 (203 s)
+época 5: F1 de dañadas en validación 0.800 (201 s)
+Validación propias: dañadas encontradas 4 de 10, sanas marcadas como dañadas 0 de 49
+Validación maduracion: dañadas encontradas 16 de 19, sanas marcadas como dañadas 1 de 13
+Guardado en Drive: C:/Users/Souls/AppData/Local/Temp/claude/8b487d5d935515de/1e3f078c-3715-481e-8c13-bc4c66162548/scratchpad/nb2b/drive/clasificador.pt

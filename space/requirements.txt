@@ -1,0 +1,6 @@
+spaces
+torch>=2.8
+torchvision
+transformers==5.23.0
+numpy
+pillow

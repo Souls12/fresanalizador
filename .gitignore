@@ -7,3 +7,10 @@ __pycache__/
 datos/externos/
 datos/*.zip
 imagenes/propias/*.zip
+
+# recortes descomprimidos y modelos intermedios
+datos/recortes/
+datos/*.pt
+*.zip
+!propias/My First Project.v1i.coco-segmentation.zip
+.gradio/

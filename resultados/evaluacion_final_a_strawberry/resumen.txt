@@ -1,0 +1,70 @@
+Listo en cpu con caja_sin_aumento_ajustado
+Funciones listas
+umbral 0.5: dañadas encontradas 4 de 10, sanas marcadas como dañadas 0, F1 0.571
+umbral 0.2: dañadas encontradas 4 de 10, sanas marcadas como dañadas 1, F1 0.533
+umbral 0.1: dañadas encontradas 8 de 10, sanas marcadas como dañadas 2, F1 0.800
+umbral 0.05: dañadas encontradas 8 de 10, sanas marcadas como dañadas 4, F1 0.727
+umbral 0.02: dañadas encontradas 8 de 10, sanas marcadas como dañadas 4, F1 0.727
+umbral 0.01: dañadas encontradas 9 de 10, sanas marcadas como dañadas 7, F1 0.692
+Umbral escogido con la validación de nuestras fotos: 0.1
+ricardo/prueba_02.jpeg 30 reales, 19 encontradas, 19 emparejadas, 43.4 s
+ricardo/prueba_25.jpeg 2 reales, 2 encontradas, 2 emparejadas, 39.7 s
+luisa/prueba_14.jpeg 9 reales, 9 encontradas, 9 emparejadas, 37.0 s
+ricardo/prueba_04.jpeg 9 reales, 9 encontradas, 9 emparejadas, 36.0 s
+luisa/prueba_28.jpeg 14 reales, 13 encontradas, 13 emparejadas, 41.7 s
+michell/prueba_29.jpeg 8 reales, 7 encontradas, 7 emparejadas, 39.9 s
+ricardo/prueba_07.jpeg 3 reales, 3 encontradas, 3 emparejadas, 34.9 s
+luisa/prueba_26.jpeg 29 reales, 29 encontradas, 28 emparejadas, 44.3 s
+ricardo/prueba_01.jpeg 34 reales, 25 encontradas, 25 emparejadas, 42.4 s
+ricardo/prueba_23.jpeg 2 reales, 2 encontradas, 2 emparejadas, 34.9 s
+luisa/prueba_15.jpeg 9 reales, 9 encontradas, 9 emparejadas, 36.4 s
+ricardo/prueba_16.jpeg 21 reales, 21 encontradas, 19 emparejadas, 41.6 s
+michell/prueba_09.jpeg 5 reales, 5 encontradas, 5 emparejadas, 39.0 s
+michell/prueba_24.jpeg 2 reales, 2 encontradas, 2 emparejadas, 35.3 s
+luisa/prueba_03.jpeg 33 reales, 26 encontradas, 23 emparejadas, 43.8 s
+michell/prueba_13.jpeg 30 reales, 27 encontradas, 26 emparejadas, 41.4 s
+luisa/prueba_27.jpeg 10 reales, 9 encontradas, 9 emparejadas, 39.3 s
+michell/prueba_11.jpeg 9 reales, 9 encontradas, 9 emparejadas, 34.9 s
+michell/prueba_08.jpeg 5 reales, 5 encontradas, 5 emparejadas, 39.0 s
+michell/prueba_12.jpeg 22 reales, 21 encontradas, 16 emparejadas, 39.7 s
+Separación de fresas (IoU de máscara de 0.5 o más)
+  fresas reales 286, encontradas 240, no encontradas 46, detecciones que no eran fresa o sobraban 12
+  precisión 0.952, recall 0.839, F1 0.892
+  IoU promedio de las encontradas 0.891
+
+Clasificación de las fresas encontradas (filas real, columnas predicha)
+predicha  danada  sana
+real                  
+danada         8    15
+sana          65   152
+  exactitud 0.667, dañadas: precisión 0.110, recall 0.348
+
+Programa completo, dañadas bien separadas y bien clasificadas
+  dañadas reales 23, encontradas y marcadas dañadas 8, marcadas dañadas en total 75
+
+Conteo por foto
+  error absoluto medio en sanas 5.00, en dañadas 3.40
+  total real 263 sanas y 23 dañadas, total contado 177 sanas y 75 dañadas
+  segundos por foto: promedio 39.23, máximo 44.31
+
+                  foto  sanas_reales  danadas_reales  sanas_predichas  danadas_predichas  segundos
+ricardo/prueba_02.jpeg            29               1               19                  0 43.417923
+ricardo/prueba_25.jpeg             2               0                0                  2 39.699028
+  luisa/prueba_14.jpeg             5               4                8                  1 36.963874
+ricardo/prueba_04.jpeg             8               1                3                  6 36.043134
+  luisa/prueba_28.jpeg            12               2               10                  3 41.682744
+michell/prueba_29.jpeg             8               0                4                  3 39.917036
+ricardo/prueba_07.jpeg             2               1                0                  3 34.942098
+  luisa/prueba_26.jpeg            29               0                5                 24 44.308371
+ricardo/prueba_01.jpeg            34               0               23                  2 42.407322
+ricardo/prueba_23.jpeg             2               0                1                  1 34.940720
+  luisa/prueba_15.jpeg             6               3                8                  1 36.417848
+ricardo/prueba_16.jpeg            21               0               15                  6 41.552261
+michell/prueba_09.jpeg             3               2                2                  3 39.033254
+michell/prueba_24.jpeg             2               0                0                  2 35.320882
+  luisa/prueba_03.jpeg            32               1               24                  2 43.764898
+michell/prueba_13.jpeg            27               3               18                  9 41.376293
+  luisa/prueba_27.jpeg            10               0                9                  0 39.333824
+michell/prueba_11.jpeg             7               2                7                  2 34.895231
+michell/prueba_08.jpeg             2               3                4                  1 38.980303
+michell/prueba_12.jpeg            22               0               17                  4 39.700579
